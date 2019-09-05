@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HappyEsayGo.TestScript.Cleartrip">
+      <class name="com.HappyEsayGo.TestScript.CThomeforRoundtrip4">
         <methods>
-          <include name="Ctrip" invocation-numbers="1 2"/>
+          <include name="roundtripbooking3"/>
+          <include name="roundtripbooking4"/>
         </methods>
-      </class> <!-- com.HappyEsayGo.TestScript.Cleartrip -->
+      </class> <!-- com.HappyEsayGo.TestScript.CThomeforRoundtrip4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

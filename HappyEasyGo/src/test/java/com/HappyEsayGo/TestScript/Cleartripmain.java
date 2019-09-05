@@ -12,7 +12,7 @@ public class Cleartripmain {
 	protected WebDriver driver;
 
 	@Parameters("selecteddriver")
-	@Test(priority = 1)
+	@Test(priority = 0)
 	public void setBrowser(String selecteddriver) throws IOException {
 
 		switch (selecteddriver) {
@@ -20,6 +20,7 @@ public class Cleartripmain {
 			driver = new ChromeDriver();
 			driver.get("https://www.cleartrip.com/");
 			break;
+
 		case "firefox":
 			driver = new FirefoxDriver();
 			driver.get("https://www.cleartrip.com/");

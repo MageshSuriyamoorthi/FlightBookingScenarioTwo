@@ -19,3 +19,13 @@
  </test> <!-- Test -->
 </suite> <!-- Suite -->
 
+
+how to move a mouse pointer manually
+
+
+		  Point coordinates = driver.findElement(By.xpath(
+		 "//img[@src='//ui.cltpstatic.com/images/brand/cleartrip_logo_book.png']")).
+		  getLocation(); Robot robot = new Robot();
+		 robot.mouseMove(coordinates.getX()+30,coordinates.getY()+80);
+		 
+

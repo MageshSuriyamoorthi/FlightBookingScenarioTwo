@@ -4,17 +4,20 @@ import java.io.FileNotFoundException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import com.HappyEsayGo.Util.Click;
 import com.selenium.java.ReadPropFile;
 
 
-public class Cleartrippage1 extends Cleartripmain {
-	//WebDriver driver = new ChromeDriver();
+public class Cleartrippage1 /* extends Cleartripmain */ {
+	WebDriver driver = new FirefoxDriver();
 	ReadPropFile propread = new ReadPropFile();
 
-	@Test(priority=2)
+	@Test(priority=1)
 	public void Ctrip() throws FileNotFoundException, InterruptedException {
 
 		ReadPropFile fp = new ReadPropFile();

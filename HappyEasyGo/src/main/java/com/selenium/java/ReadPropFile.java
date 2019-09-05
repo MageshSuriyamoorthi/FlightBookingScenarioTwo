@@ -37,4 +37,21 @@ public class ReadPropFile {
 		return data;
 
 	}
+	public String readPropertiesFileThree(String elements) throws FileNotFoundException {
+		Properties prop = new Properties();
+
+		FileInputStream input = new FileInputStream(
+				"D:\\new\\eclipse-workspace\\HappyEasyGo\\src\\test\\resources\\locator\\locators3.properties");
+		try {
+			prop.load(input);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		String data = prop.getProperty(elements);
+		return data;
+
+	}
+
 }

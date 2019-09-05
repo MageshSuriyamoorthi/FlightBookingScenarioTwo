@@ -18,7 +18,7 @@ public void page3() throws FileNotFoundException, InterruptedException {
 	Thread.sleep(5000);
 
 	driver.findElement(By.xpath(fp.readPropertiesFileTwo("Emailaddressstep.EmailId.txt")))
-			.sendKeys("AAABBB@gmail.com");
+			.sendKeys("BBBCCC@gmail.com");
 
 	Thread.sleep(5000);
 
@@ -30,15 +30,15 @@ public void page3() throws FileNotFoundException, InterruptedException {
 	
 	Thread.sleep(5000);
 
-	driver.findElement(By.xpath(fp.readPropertiesFileTwo("travellers.FirstName.txt"))).sendKeys("AAA");
+	driver.findElement(By.xpath(fp.readPropertiesFileTwo("travellers.FirstName.txt"))).sendKeys("BBB");
 
-	driver.findElement(By.xpath(fp.readPropertiesFileTwo("travellers.LastName.txt"))).sendKeys("BBB");
+	driver.findElement(By.xpath(fp.readPropertiesFileTwo("travellers.LastName.txt"))).sendKeys("CCC");
 
 	driver.findElement(By.xpath(fp.readPropertiesFileTwo("locators.textarea.Title"))).click();
 
-	driver.findElement(By.xpath(fp.readPropertiesFileTwo("locators.textarea.FirstName"))).sendKeys("CCC");
+	driver.findElement(By.xpath(fp.readPropertiesFileTwo("locators.textarea.FirstName"))).sendKeys("DDD");
 
-	driver.findElement(By.xpath(fp.readPropertiesFileTwo("locators.textarea.LastName"))).sendKeys("DDD");
+	driver.findElement(By.xpath(fp.readPropertiesFileTwo("locators.textarea.LastName"))).sendKeys("CCC");
 
 	driver.findElement(By.xpath(fp.readPropertiesFileTwo("travellers.Day.txt"))).click();
 

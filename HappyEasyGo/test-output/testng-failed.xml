@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test-class Suite]" parallel="tests">
-  <test thread-count="2" name="Test2(failed)" parallel="tests">
-    <parameter name="selecteddriver" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HappyEsayGo.TestScript.Cleartrippage3">
+      <class name="com.HappyEsayGo.TestScript.CThomeforRoundtrip4">
         <methods>
-          <include name="Ctrip"/>
-          <include name="page2"/>
-          <include name="page3"/>
+          <include name="roundtripbooking3"/>
+          <include name="roundtripbooking4"/>
         </methods>
-      </class> <!-- com.HappyEsayGo.TestScript.Cleartrippage3 -->
+      </class> <!-- com.HappyEsayGo.TestScript.CThomeforRoundtrip4 -->
     </classes>
-  </test> <!-- Test2(failed) -->
-  <test thread-count="2" name="Test1(failed)" parallel="tests">
-    <parameter name="selecteddriver" value="chrome"/>
-    <classes>
-      <class name="com.HappyEsayGo.TestScript.Cleartrippage3">
-        <methods>
-          <include name="Ctrip"/>
-          <include name="page2"/>
-          <include name="page3"/>
-        </methods>
-      </class> <!-- com.HappyEsayGo.TestScript.Cleartrippage3 -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Test-class Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
